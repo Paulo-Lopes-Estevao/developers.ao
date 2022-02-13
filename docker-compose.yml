@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+  app-developers-ao:
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: developers_ao
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - "/app/node_modules"
+      - "./:/app"
