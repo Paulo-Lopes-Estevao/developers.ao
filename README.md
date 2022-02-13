@@ -26,5 +26,10 @@ yarn build
 yarn lint
 ```
 
+## Compiles in docker
+```
+docker-compose up -d
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
